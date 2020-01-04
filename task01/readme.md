@@ -65,9 +65,13 @@
 | Get a customer with "ALFKI" id.                                   | GET       | /Customers('ALFKI')        |
 | Get all orders.                                                   | GET       | /Orders                    |
 | Get an order with "10248" id.                                     | GET       | /Orders(10248)             |
-| Get all orders for a customer with "ANATR" id.                    | GET       | Orders?$filter = CustomerID eq 'ANATR'|
+| Get all orders for a customer with "ANATR" id.                    | GET       | /Orders?$filter = CustomerID eq 'ANATR' |
 | Get a customer for an order with "10248" id.                      | GET       | /Orders(10248)/Customer    |
-
+| Get all products.                                                 | GET       | /Products                  |
+| Get all products for a supplier with id 1.                        | GET       | /Products?$filter = SupplierID eq 1 |
+| Get order details from order with "10350" id.                     | GET       | /Orders(10350)/Order_Details |
+| Get all territories for an employee with "4" id.                  | GET       | /Employees(4)/Territories  |
+| Get Territories with region 3.                                    | GET       | /Territories?$filter = RegionID eq 3 |
 Создайте самостоятельно еще минимум 5 сложных запросов и запишите их в таблицу.
 
 
