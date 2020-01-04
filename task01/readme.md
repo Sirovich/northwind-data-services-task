@@ -72,6 +72,7 @@
 | Get order details from order with "10350" id.                     | GET       | /Orders(10350)/Order_Details |
 | Get all territories for an employee with "4" id.                  | GET       | /Employees(4)/Territories  |
 | Get Territories with region 3.                                    | GET       | /Territories?$filter = RegionID eq 3 |
+
 Создайте самостоятельно еще минимум 5 сложных запросов и запишите их в таблицу.
 
 
