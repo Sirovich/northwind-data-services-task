@@ -61,12 +61,12 @@
 | Query Description                                                 | HTTP Verb | Url                        |
 | ----------------------------------------------------------------- | --------- | -------------------------- |
 | Get service metadata.                                             | GET       | /$metadata                 |
-| Get all customers.                                                | GET       |                            |
-| Get a customer with "ALFKI" id.                                   | GET       |                            |
-| Get all orders.                                                   | GET       |                            |
-| Get an order with "10248" id.                                     | GET       |                            |
-| Get all orders for a customer with "ANATR" id.                    | GET       |                            |
-| Get a customer for an order with "10248" id.                      | GET       |                            |
+| Get all customers.                                                | GET       | /Customers                 |
+| Get a customer with "ALFKI" id.                                   | GET       | /Customers('ALFKI')        |
+| Get all orders.                                                   | GET       | /Orders                    |
+| Get an order with "10248" id.                                     | GET       | /Orders(10248)             |
+| Get all orders for a customer with "ANATR" id.                    | GET       | Orders?$filter = CustomerID eq 'ANATR'|
+| Get a customer for an order with "10248" id.                      | GET       | /Orders(10248)/Customer    |
 
 Создайте самостоятельно еще минимум 5 сложных запросов и запишите их в таблицу.
 
